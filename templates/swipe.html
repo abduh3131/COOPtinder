@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Job Swiper</title>
+<h1>Swipe Jobs</h1>
+{% if job %}
+  <h2>{{ job.title }}</h2>
+  <p>{{ job.description }}</p>
+  <form method="post" action="/swipe/{{ job.id }}">
+    <button name="action" value="left">Pass</button>
+    <button name="action" value="right">Apply</button>
+  </form>
+{% else %}
+  <p>No more jobs.</p>
+{% endif %}
