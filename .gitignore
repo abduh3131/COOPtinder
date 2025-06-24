@@ -1,0 +1,10 @@
+# Node modules
+careerswipe-app/node_modules
+# logs
+*.log
+# local env
+.env
+# OS generated files
+.DS_Store
+*.ico
+*.zip
