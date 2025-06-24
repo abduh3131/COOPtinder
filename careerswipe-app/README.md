@@ -24,10 +24,10 @@ Mobile-first job application platform inspired by Tinder. Swipe through jobs, op
      ```
 
 3. **Configure the OpenRouter API key**
-   - In the project root, create a file named `.env.local`.
-   - Add the line:
+   - Copy `.env.example` to `.env.local` in the project root.
+   - Edit `.env.local` and replace `your-openrouter-api-key` with your actual key:
      ```
-     NEXT_PUBLIC_OPENROUTER_API_KEY=your-key-here
+     NEXT_PUBLIC_OPENROUTER_API_KEY=your-openrouter-api-key
      ```
 
 4. **Start the development server**
