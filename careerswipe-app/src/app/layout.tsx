@@ -11,6 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="./icon.svg" type="image/svg+xml" sizes="any" />
         <link rel="manifest" href="./manifest.json" />
         <meta name="theme-color" content="#009A44" />
       </head>

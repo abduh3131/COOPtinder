@@ -5,7 +5,7 @@ Mobile-first job application platform inspired by Tinder. Swipe through jobs, op
 ## Quick Start
 
 On Windows 11 you can simply run `../start.bat` from the repository root. **Right‑click and choose "Run as Administrator"** so the script can install Node.js via **winget** if needed. It then installs dependencies, prompts for your OpenRouter API key, and launches the dev server. After a short delay it opens `http://localhost:3000` in your browser and you can "Install" the site to run it like a native app.
-If `localhost` isn't available, run `../start-static.bat` instead. This builds static files and opens `out/index.html` directly so no server is needed. All links are relative so you can navigate through the app even when loaded from the file system.
+If `localhost` isn't available, run `../start-static.bat` instead. This builds static files and opens `out/index.html` directly so no server is needed. The build script copies assets into each page folder so navigation works when opening files from disk.
 If you want to test on a phone, connect both devices to the same network and visit `http://<your-pc-ip>:3000` from the mobile browser when using the dev server.
 Use the browser's "Add to Home screen" or "Install" option to save CareerSwipe as a standalone app.
 
