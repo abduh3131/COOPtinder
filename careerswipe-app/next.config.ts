@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Enable static export so CareerSwipe can run without a web server
+  output: 'export',
 };
 
 export default nextConfig;
