@@ -7,5 +7,8 @@ if %ERRORLEVEL% neq 0 (
 ) else (
     npm install -g expo-cli
 )
-
 echo Setup complete.
+set /p OPENROUTER_API_KEY=Enter your OpenRouter API key:
+echo Starting application...
+python run_app.py
+
