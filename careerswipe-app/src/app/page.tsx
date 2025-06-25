@@ -7,7 +7,7 @@ export default function Home() {
       <p className="text-center max-w-md mb-6">
         Swipe through jobs, optimize your resume with AI, and track your applications effortlessly.
       </p>
-      <Link href="/swipe" className="bg-primary text-white px-6 py-3 rounded-full">
+      <Link href="swipe/" className="bg-primary text-white px-6 py-3 rounded-full">
         Get Started
       </Link>
     </div>
