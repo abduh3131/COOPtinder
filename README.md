@@ -4,7 +4,8 @@ This project provides a minimal prototype of a Tinder‑style application for jo
 
 * **backend/** – Flask API using SQLite and OpenRouter for AI features.
 * **frontend/** – React Native app (Expo) for iOS.
-* **setup.sh** – simple helper script to install dependencies.
+* **setup.sh** – helper script to install dependencies on macOS/Linux.
+* **setup.bat** – Windows batch file for installing dependencies.
 
 The color palette uses green and white similar to TD Bank.
 
@@ -17,13 +18,17 @@ The color palette uses green and white similar to TD Bank.
 
 ## Setup
 
-Run the script to install Python dependencies and Expo CLI:
+Run one of the setup scripts to install Python dependencies and Expo CLI:
 
 ```bash
+# macOS/Linux
 ./setup.sh
+
+# Windows
+setup.bat
 ```
 
-Ensure Node.js is installed beforehand. The script will prompt if Node.js is missing.
+Ensure Node.js is installed beforehand. The scripts will print a message if it is missing.
 
 ## Running everything
 
