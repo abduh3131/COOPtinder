@@ -30,4 +30,5 @@ if (-not (Test-Path $envFile)) {
 
 # Start the development server
 Write-Host 'Starting CareerSwipe...'
-npm run dev
+Start-Process 'http://localhost:3000'
+npm run dev -- -H 0.0.0.0 -p 3000
