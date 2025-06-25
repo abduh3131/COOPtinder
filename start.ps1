@@ -8,6 +8,11 @@ function Ensure-Node {
         return
     }
     Write-Host 'Node.js not found. Installing with winget...'
+    $admin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+    if (-not $admin) {
+        Write-Warning 'Please run start.bat from an elevated prompt so winget can install Node.js.'
+        exit 1
+    }
     if (Get-Command winget -ErrorAction SilentlyContinue) {
         Start-Process winget -Wait -ArgumentList 'install', '-e', '--id', 'OpenJS.NodeJS.LTS', '-h'
         $env:Path += ';C:\\Program Files\\nodejs'
