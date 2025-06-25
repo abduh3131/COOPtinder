@@ -2,7 +2,7 @@
 
 This repository contains **CareerSwipe**, a mobile-first job application built with Next.js.
 
-For a quick start on Windows 11, double-click `start.bat`. If Node.js isn't installed the script uses **winget** to fetch it—run the batch file from an elevated prompt so winget has permission. The script then installs dependencies, prompts for your OpenRouter API key, and launches the dev server. After a brief delay your default browser opens <http://localhost:3000>.
+For a quick start on Windows 11, **right‑click `start.bat` and choose "Run as Administrator"**. If Node.js isn't installed the script uses **winget** to fetch it. The script then installs dependencies, prompts for your OpenRouter API key, and launches the dev server. After a short delay your default browser opens <http://localhost:3000>.
 
 If `localhost` networking is blocked on your machine you can build a completely offline version instead. Use `start-static.bat` which builds static files and opens them directly without starting a server.
 

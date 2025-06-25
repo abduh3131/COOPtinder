@@ -9,7 +9,7 @@ export const mockJobs: Job[] = [
     salary: '$90k - $110k',
     remote: true,
     tags: ['Full-time', 'Remote'],
-    logo: '/td-logo.png',
+    logo: '/td-logo.svg',
   },
   {
     id: 2,
@@ -19,6 +19,6 @@ export const mockJobs: Job[] = [
     salary: '$80k - $95k',
     remote: false,
     tags: ['Urgent', 'Full-time'],
-    logo: '/greentech-logo.png',
+    logo: '/greentech-logo.svg',
   },
 ];

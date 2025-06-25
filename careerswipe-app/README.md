@@ -4,7 +4,7 @@ Mobile-first job application platform inspired by Tinder. Swipe through jobs, op
 
 ## Quick Start
 
-On Windows 11 you can simply run `../start.bat` from the repository root. If Node.js isn't installed the script will request admin rights to install it via **winget**, then install dependencies, prompt for your OpenRouter API key, and launch the dev server. After a short delay it opens `http://localhost:3000` in your browser and you can "Install" the site to run it like a native app.
+On Windows 11 you can simply run `../start.bat` from the repository root. **Right‑click and choose "Run as Administrator"** so the script can install Node.js via **winget** if needed. It then installs dependencies, prompts for your OpenRouter API key, and launches the dev server. After a short delay it opens `http://localhost:3000` in your browser and you can "Install" the site to run it like a native app.
 If `localhost` isn't available, run `../start-static.bat` instead. This builds static files and opens `out/index.html` directly so no server is needed.
 If you want to test on a phone, connect both devices to the same network and visit `http://<your-pc-ip>:3000` from the mobile browser when using the dev server.
 Use the browser's "Add to Home screen" or "Install" option to save CareerSwipe as a standalone app.
@@ -42,3 +42,14 @@ Use the browser's "Add to Home screen" or "Install" option to save CareerSwipe a
    - Build for production: `npm run build`
 
 These steps let you test CareerSwipe locally on Windows 11 using Visual Studio Code.
+
+## Styling
+
+CareerSwipe uses **Tailwind CSS** with a color palette inspired by TD Bank:
+
+- Primary Green `#009A44`
+- Accent Green `#00B14F`
+- White background `#FFFFFF`
+- Dark text `#1C1C1C`
+
+All pages are mobile-first and should show rounded cards and green buttons once Tailwind compiles correctly. If you see an unstyled page, ensure `npm install` completed without errors.
