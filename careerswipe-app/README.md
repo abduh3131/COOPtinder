@@ -4,7 +4,7 @@ Mobile-first job application platform inspired by Tinder. Swipe through jobs, op
 
 ## Quick Start
 
-On Windows 11 you can simply run `../start.bat` from the repository root. The script installs Node.js (if missing), installs dependencies, prompts for your OpenRouter key, opens the browser, and launches the dev server on `http://localhost:3000`.
+On Windows 11 you can simply run `../start.bat` from the repository root. The script installs Node.js (if missing), installs dependencies, prompts for your OpenRouter key, launches the dev server, and opens the browser on `http://localhost:3000` after a short delay.
 If you want to test on a phone, connect both devices to the same network and visit `http://<your-pc-ip>:3000` from the mobile browser.
 
 ## Manual Setup

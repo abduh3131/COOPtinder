@@ -30,5 +30,7 @@ if (-not (Test-Path $envFile)) {
 
 # Start the development server
 Write-Host 'Starting CareerSwipe...'
-Start-Process 'http://localhost:3000'
+# Open the browser in a separate hidden PowerShell after a short delay so
+# the dev server has time to start.
+Start-Process powershell -WindowStyle Hidden -ArgumentList '-NoProfile -Command "Start-Sleep -Seconds 5; Start-Process http://localhost:3000"'
 npm run dev -- -H 0.0.0.0 -p 3000
